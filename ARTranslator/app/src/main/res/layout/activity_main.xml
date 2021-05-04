@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arr"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/sourceLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="Detecting.."
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <EditText
+        android:maxHeight="100dp"
+        android:scrollbars="vertical"
+        android:id="@+id/sourceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:hint="Source Text"
+        android:minHeight="100dp"
+        android:textColor="#020202"
+        android:textColorHint="#000000"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/oval"
+        android:insetLeft="70dp"
+        android:insetRight="70dp"
+        android:text="Translate" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_marginBottom="10dp"
+        android:id="@+id/floatingaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+
+        android:clickable="true"
+        app:backgroundTint="#FDFDFD"
+        app:srcCompat="@drawable/ic"
+        tools:srcCompat="@drawable/a" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/copybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="334dp"
+        android:layout_marginTop="-66dp"
+        android:clickable="true"
+        app:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/copy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:text="English"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:scrollbars="vertical"
+        android:maxLines="10"
+
+        android:id="@+id/translatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

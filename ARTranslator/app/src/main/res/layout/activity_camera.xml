@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arr"
+    android:orientation="vertical"
+    tools:context=".CameraActivity">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="199dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/ovall"
+        android:onClick="doProcess"
+        android:text="Choose Image"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/translateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/ovall"
+        android:text="Translate"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/translatedText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+
+
+        android:id="@+id/storageBtn"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/ovall"
+        android:gravity="center|center_vertical"
+        android:onClick="saveImage"
+        android:text="Save"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
